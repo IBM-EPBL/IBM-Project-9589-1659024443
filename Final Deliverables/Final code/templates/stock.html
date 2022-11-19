@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock balance</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+             <table class="table table-striped">
+    <thead>
+      <tr>
+        <!-- <th class="text-info">Location Name</th> -->
+        <th class="text-info">Product Name</th>
+           <th class="text-info">Product QTY and Validity</th>
+           <!-- <th class="text-info">Product Validity</th> -->
+           <th class="btn btn-danger"><a href="/home"><button>Home Page</button></a></th>
+        
+      </tr>
+    </thead>
+    <tbody>
+     {% for row in rows %}
+            <tr>
+               <td>{{row["productName"]}}</td> 
+               <td>{{row["QTY"]}}</td>
+               <!-- <td>{{row["Validity"]}}</td> -->
+               
+            </tr>
+         {% endfor %}
+    </tbody>
+  </table>
+</div>
+            
+            </form>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</body>
+</html>
+  

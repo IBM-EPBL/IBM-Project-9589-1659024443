@@ -1,0 +1,93 @@
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Register </title>
+		<style>
+			.border{
+    padding: 80px 50px;
+    width: 350px;
+    height: 500px;
+    border: 1px solid #236B8E;
+    border-radius: 0px;
+    background-color: rgb(8, 38, 49);
+}
+			.header{
+    padding: 5px 105px;
+    width: 150px;
+    height: 70px;
+    background-color:rgb(8, 38, 49);
+    
+  
+}
+.png2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-content: center;
+    /*margin-left: 35%;*/
+    background-color: white;
+}
+.msg {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    }
+	.btn {
+    padding: 10px 40px;
+    background-color: #feffff;
+    color: #060606;
+    font-style: monospace;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.textbox{
+    padding: 10px 40px;
+    background-color: #e6edf0;
+    caret-color: #100e0e;
+    /*border-radius: 10px;*/
+}
+    
+::placeholder {
+    color: #0b0b0b;
+    opacity: 1;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.word{
+    color: #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif ;
+    /*font-weight: bold;*/
+}
+
+.bottom{
+    color: #ffffff;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+		</style>			
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Register</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form  method="POST" action="/afterreg">
+		
+					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+					<input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
+					<input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+					<input type="submit" class="btn" value="Sign Up"></br>
+				</form>
+			</h2>
+			<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+		</div>
+		</div>
+	</body>
+</html>
